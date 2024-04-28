@@ -12,6 +12,6 @@ namespace Depra.Impact.Surface
 
 		private void OnEnable() => _renderer = GetComponent<Renderer>();
 
-		public override string Name() => _renderer.material.name;
+		public override string Name() => _renderer.sharedMaterial.name;
 	}
 }
